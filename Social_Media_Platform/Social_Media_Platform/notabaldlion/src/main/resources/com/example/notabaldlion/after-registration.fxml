@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="430.0" style="-fx-background-color: #803F14;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notabaldlion.AfterRegistrationController">
+   <children>
+      <ImageView fx:id="ppimage" fitHeight="150.0" fitWidth="150.0" layoutX="135.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <Separator layoutX="140.0" layoutY="73.0" prefWidth="150.0" />
+      <Separator layoutX="140.0" layoutY="223.0" prefWidth="150.0" />
+      <Separator layoutX="287.0" layoutY="75.0" orientation="VERTICAL" prefHeight="150.0" />
+      <Separator layoutX="136.0" layoutY="75.0" orientation="VERTICAL" prefHeight="150.0" />
+      <ImageView fitHeight="150.0" fitWidth="138.0" layoutX="35.0" layoutY="-2.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="249.0" layoutY="-8.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-6.0" layoutY="250.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-18.4">
+         <image>
+            <Image url="@4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="128.0" layoutX="47.0" layoutY="480.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-131.5">
+         <image>
+            <Image url="@5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="119.0" fitWidth="112.0" layoutX="301.0" layoutY="124.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-32.9">
+         <image>
+            <Image url="@4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="105.0" layoutX="16.0" layoutY="90.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-47.6">
+         <image>
+            <Image url="@3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="104.0" layoutX="12.0" layoutY="182.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-24.4">
+         <image>
+            <Image url="@5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="-13.0" layoutY="357.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="116.1">
+         <image>
+            <Image url="@3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="138.0" layoutX="232.0" layoutY="351.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-53.5">
+         <image>
+            <Image url="@4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="131.0" layoutX="139.0" layoutY="244.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Honey.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="265.0" layoutY="518.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+         <image>
+            <Image url="@Honey.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="85.0" layoutX="189.0" layoutY="519.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addFriendButton" layoutX="301.0" layoutY="507.0" mnemonicParsing="false" onAction="#addFriendButtonAction" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="Add friend" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="addbio" layoutX="173.0" layoutY="432.0" mnemonicParsing="false" onAction="#addbioAction" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="Add bio" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="biotextfield" layoutX="110.0" layoutY="325.0" prefHeight="83.0" prefWidth="200.0" style="-fx-background-radius: 5;" />
+      <Button fx:id="nextButton" layoutX="189.0" layoutY="600.0" mnemonicParsing="false" onAction="#nextButtonAction" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="Next">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5568181529189601" endY="0.6174242505521486" startX="0.3787878787878788" startY="0.21969694079774799">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9300000071525574" green="0.7966369986534119" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="addpp" layoutX="145.0" layoutY="244.0" mnemonicParsing="false" onAction="#addppAction" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="Add profile picture" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="friendusernametextfield" layoutX="136.0" layoutY="507.0" promptText="username">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font></TextField>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-61.0" layoutY="525.0" opacity="0.44" pickOnBounds="true" preserveRatio="true" rotate="-138.1">
+         <image>
+            <Image url="@Honey.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

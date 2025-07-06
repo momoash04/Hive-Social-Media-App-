@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="430.0" style="-fx-background-color: #803F14;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notabaldlion.profilepageController">
+   <children>
+      <HBox layoutY="37.0" prefHeight="179.0" prefWidth="430.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="179.0" prefWidth="127.0">
+               <children>
+                  <ImageView fx:id="profileimage" fitHeight="107.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="usernamelabel" text="Abdo_Sallam" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="185.0" prefWidth="168.0" spacing="15.0">
+               <children>
+                  <TextArea fx:id="biolabel" prefHeight="130.0" prefWidth="166.0" style="-fx-background-color: #E8B551; -fx-background-radius: 5;" wrapText="true" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="201.0" prefWidth="127.0" spacing="30.0">
+               <children>
+                  <Button fx:id="editbutton" mnemonicParsing="false" onAction="#editbuttonaction" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="Edit Profile">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.8977273160761052" endY="0.8863636453946432" startX="0.261363633202784" startY="0.26136369416207983">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.378947377204895" green="0.15050292015075684" blue="0.01824561320245266" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <Button fx:id="friendsbutton" mnemonicParsing="false" onAction="#friendsbuttonaction" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="Friends">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.8977273160761052" endY="0.8863636453946432" startX="0.261363633202784" startY="0.14772733052571616">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9607843160629272" green="0.8705882430076599" blue="0.7019608020782471" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.4627451002597809" green="0.14509804546833038" blue="0.0117647061124444" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator layoutY="237.0" prefHeight="0.0" prefWidth="430.0" />
+      <AnchorPane layoutY="237.0" prefHeight="413.0" prefWidth="430.0">
+         <children>
+            <Button fx:id="backbutton" layoutX="6.0" layoutY="373.0" mnemonicParsing="false" onAction="#backbuttonAction" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #d46805; -fx-background-radius: 20;" text="&lt;--" textFill="WHITE" />
+            <Label layoutX="16.0" layoutY="14.0" text="Posts">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.8068182396166251" endY="0.685606062412262" startX="0.3143939579075033" startY="0.23484851374770657">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8313725590705872" green="0.40784314274787903" blue="0.019607843831181526" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.7647058963775635" blue="0.29019609093666077" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ScrollPane layoutX="14.0" layoutY="45.0" prefHeight="308.0" prefWidth="403.0">
+               <content>
+                  <VBox fx:id="vboxpostcontainer" prefHeight="425.0" prefWidth="386.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
